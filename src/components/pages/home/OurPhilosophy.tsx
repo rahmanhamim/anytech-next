@@ -43,7 +43,7 @@ const OurPhilosophy = () => {
         className='mt-10'
       />
 
-      <div className='mt-8 grid grid-cols-3 gap-8'>
+      <div className='mt-8 grid grid-cols-1 gap-8 md:grid-cols-3'>
         {cardsData.map((card, index) => (
           <div
             key={index}

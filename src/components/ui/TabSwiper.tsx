@@ -52,7 +52,7 @@ const TabSwiper = () => {
   return (
     <div className='container mt-5 lg:px-0'>
       {/* Tabs */}
-      <div className='mb-4 flex justify-center gap-8'>
+      <div className='mb-4 hidden justify-center gap-8 md:flex'>
         {tabs.map((tab, index) => (
           <button
             key={index}
@@ -73,13 +73,13 @@ const TabSwiper = () => {
         autoplay={{ delay: 3000 }}
         loop={true}
         onSlideChange={(swiper) => setActiveIndex(swiper.activeIndex)}
-        className='mt-10 h-[550px] overflow-hidden'
+        className='mt-10 min-h-[550px] overflow-hidden'
       >
         {tabs.map((tab, index) => (
           <SwiperSlide key={index}>
             <div className='h-full p-1'>
-              <div className='grid h-full grid-cols-2 gap-10 rounded-3xl border px-8 py-14 text-content-500 shadow'>
-                <div>
+              <div className='grid h-full grid-cols-1 gap-10 rounded-3xl border px-8 py-14 text-content-500 shadow md:grid-cols-2'>
+                <div className='order-2 md:order-1'>
                   <p className='font-bold tracking-widest text-primary-500'>
                     {tab.name}
                   </p>
@@ -89,7 +89,7 @@ const TabSwiper = () => {
                   </p>
                   <p>{tab.content2}</p>
                 </div>
-                <div className='relative overflow-hidden rounded-2xl'>
+                <div className='md: relative order-1 min-h-60 overflow-hidden rounded-2xl md:order-2'>
                   <Image
                     src={tab.image}
                     alt={tab.name}

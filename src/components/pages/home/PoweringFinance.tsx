@@ -2,7 +2,7 @@ import Image from 'next/image'
 
 const PoweringFinance = () => {
   return (
-    <section className='container my-40 grid grid-cols-2 gap-16'>
+    <section className='container my-40 grid grid-cols-1 gap-16 md:grid-cols-2'>
       <div className='text-content-500'>
         <p className='mb-6 font-montserrat font-bold tracking-widest text-primary-500'>
           POWERING THE FUTURE OF FINANCE
@@ -59,7 +59,7 @@ const PoweringFinance = () => {
           width={120}
           height={120}
           alt='Powering Finance'
-          className='absolute right-10 top-20 z-20 animate-bounce [animation-duration:_10s]'
+          className='absolute right-0 top-20 z-20 animate-bounce [animation-duration:_10s] md:right-10'
         />
 
         {/* main image */}

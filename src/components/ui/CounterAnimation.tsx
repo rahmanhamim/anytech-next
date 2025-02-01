@@ -10,7 +10,7 @@ const CounterAnimation = ({ count }: { count: number }) => {
       separator=','
       enableScrollSpy
       scrollSpyOnce={false}
-      className='bg-gradient-to-b from-primary-400 to-primary-700 bg-clip-text text-4xl font-bold text-transparent md:text-7xl'
+      className='bg-gradient-to-b from-primary-400 to-primary-700 bg-clip-text text-5xl font-bold text-transparent md:text-7xl'
     />
   )
 }

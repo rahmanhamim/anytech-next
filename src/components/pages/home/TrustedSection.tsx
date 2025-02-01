@@ -24,13 +24,13 @@ const achievementData = [
 
 const TrustedSection = () => {
   return (
-    <section className='container my-40'>
+    <section className='container my-20 md:my-40'>
       <p className='mb-6 text-center font-montserrat font-bold tracking-widest text-primary-500'>
         TRUSTED BY THE BEST
       </p>
-      <div className='grid grid-cols-3 gap-10'>
+      <div className='grid grid-cols-1 gap-10 md:grid-cols-3'>
         {achievementData.map((item, index) => (
-          <div key={index}>
+          <div key={index} className='flex items-center gap-4 md:flex-col'>
             <div className='flex items-center text-primary-500'>
               {item?.leftIcon && (
                 <item.leftIcon className='text-7xl text-primary-500' />
@@ -47,7 +47,7 @@ const TrustedSection = () => {
                 <item.rightIcon className='text-7xl text-primary-500' />
               )}
             </div>
-            <p className='mt-4 text-lg text-content-500'>{item?.title}</p>
+            <p className='text-sm text-content-500 md:text-lg'>{item?.title}</p>
           </div>
         ))}
       </div>

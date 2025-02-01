@@ -6,9 +6,9 @@ const Footer = () => {
   return (
     <footer>
       <div className='bg-[#002045] py-14 text-tertiary-500'>
-        <div className='container flex items-center justify-between gap-4'>
+        <div className='container flex flex-wrap items-center justify-between gap-4'>
           <Image src='/assets/logo.svg' alt='logo' width={170} height={28} />
-          <div className='flex items-center gap-10'>
+          <div className='flex flex-wrap items-center gap-10'>
             <p className='relative'>
               Our Solutions
               <span className='absolute -right-5 -top-3 h-12 w-[1px] bg-tertiary-900' />
